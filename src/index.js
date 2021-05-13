@@ -160,3 +160,80 @@
 // const arr8 = arr4;
 // arr8[0] = 100
 // console.log(arr4);
+
+/**
+ * mapやfilterを使った配列の処理
+ */
+// const nameArr = ["田中", "山田", "uno"];
+// for (let index = 0; index < nameArr.length; index++) {
+//   console.log(`${index + 1}番目は${nameArr[index]}です`);
+// }
+
+// // mapの基本的な構文
+// // nameに配列の要素が順番に格納されていく(roop処理となる)
+// const nameArr2 = nameArr.map((name)=>{
+//   return name;
+// })
+// console.log(nameArr2);
+
+// 配列の要素を順番に取り出してコンソールログに出力する処理
+// nameArr.map((name, index) => console.log(`${index+1}番目は${name}です`));
+
+// // filterを使用
+// // return文に条件式を入れることができる
+// // 偶数のみを新しい配列に格納する処理
+// const numArr = [1, 2, 3, 4, 5];
+// const newNumArr = numArr.filter((num) => {
+//   return num % 2 === 0;
+// });
+// console.log(newNumArr);
+
+// const newNameArr = nameArr.map((name)=>{
+//   if (name === "uno") {
+//     return name;
+//   } else {
+//     return `${name}さん`;
+//   }
+// })
+// console.log(newNameArr);
+
+/**
+ * 三項演算子
+ */
+// ある条件 ? 条件がtrueの時 : 条件がfalseの時
+// const val1 = 1 < 0 ? "trueです" : "falseです";
+// console.log(val1);
+
+// const num = 1300;
+
+// const formattedNum = typeof num === "number" ? num.toLocaleString() : "数値を入力してください";
+// console.log(formattedNum);
+
+// const checkSum = (num1,num2) => {
+//   return num1 + num2 > 100 ? "100を超えています!!" : "許容範囲内です";
+// }
+// console.log(checkSum(50,50));
+
+/**
+ * 論理演算子の本当の意味を知ろう　$$ ||
+ */
+// const flag1 = true;
+// const flag2 = true;
+
+// if (flag1 || flag2) {
+//   console.log("1か2はtrueになります");
+// }
+// if (flag1 && flag2) {
+//   console.log("1も2もtrueになります");
+// }
+
+// || は左側がfalseなら右側を返す
+// nullはfalse判定される
+// const num = null;
+// const fee = num || "金額未設定です";
+// console.log(fee);
+
+// && は左側がtrueなら右側を返す
+// const num2 = null;
+// const fee2 = num2 && "何か設定されました";
+// console.log(fee2);
